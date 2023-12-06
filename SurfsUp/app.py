@@ -8,7 +8,7 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 
 # Setting up the connection to the SQLite database.
-engine = create_engine("sqlite:////Users/brettclaus/Documents/BootCamp/Module 10/Challenge/Module-10-Challenge/SurfsUp/Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
 # Reflecting the existing database into a new model.
 Base = automap_base()
